@@ -22,11 +22,11 @@ setup(
 		"Natural Language :: English"
 	],
 	python_requires=">=3.8",
-	install_requires=[
-		"wget",
-	],
+	install_requires=[],
 	include_package_data=True,
-	packages = ["grabfont"],
+	packages = [
+		"grabfont"
+	],
 	entry_points = {
 		"console_scripts": [
 			"grabfont = grabfont.__main__:main"
