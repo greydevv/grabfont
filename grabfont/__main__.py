@@ -23,4 +23,4 @@ def main():
 	parser.add_argument("dir", type=str, nargs="?", default=None, help="The directory to download the font to.")
 
 	args = parser.parse_args()
-	download_font(args.font, args.dir)
+	download_font(args.font.replace(" ", "+"), args.dir)
